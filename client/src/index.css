@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+
+    /** Global **/
+
+    html,
+    body {
+    scroll-behavior: smooth;
+    }
+
+    body {
+        background-color: #aca297;
+        font-family: "Poppins", sans-serif;
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+        @apply overflow-y-scroll
+    }
+
+    .container { padding-inline: 15px; }
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    img {
+        display: flex;
+        width: 100%;
+    }
+
+    a {
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    input,
+    button {
+    background: none;
+    border: none;
+    font: inherit;
+    }
+
+    h1 {
+        font-size: 3rem; /* 48px */
+        line-height: 1;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    h2 {
+        font-size: 2.25rem; /* 36px */
+        line-height: 2.5rem; /* 40px */
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    h3 {
+        font-size: 1.875rem; /* 30px */
+        line-height: 2.25rem; /* 36px */
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    h4 {
+        font-size: 1.5rem; /* 24px */
+        line-height: 2rem; /* 32px */
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    p {
+        color: "eerie";
+        font-size: 1rem; /* 16px */
+        line-height: 1.5rem; /* 24px */
+        font-weight: 400;
+        font-style: normal;
+    }
+
+        /****************************************************************************************************/
+
+    /** Mobile Navbar **/
+
+    nav {
+        background-color: #212121;
+        box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.8);
+        z-index: 999;
+    }
+
+    nav {
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-size: 17px;
+    }
+
+    .logo {
+        font-family: 'Dancing Script', cursive;
+    }
+
+    nav li {
+        font-size: larger;
+        color: #e7e7e7d1;
+    }
+
+    /****************************************************************************************************/
+
+    /* For WebKit browsers */
+
+    ::-webkit-scrollbar {
+        height: 8px; /* Adjust the height of the horizontal scrollbar */
+        width: .5px;
+        color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #888; /* Color of the scrollbar thumb */
+        border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555; /* Color when hovering over the scrollbar thumb */
+    }
+
+}
