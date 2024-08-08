@@ -19,6 +19,8 @@
         @apply overflow-y-scroll
     }
 
+    .lg-container { padding-inline: 55px; }
+
     .container { padding-inline: 15px; }
 
     * {
@@ -76,6 +78,13 @@
         font-style: normal;
     }
 
+    h5 {
+        font-size: 1.125rem; /* 18px */
+        line-height: 1.75rem; /* 28px */
+        font-weight: 600;
+        font-style: normal;
+    }
+
     p {
         color: "eerie";
         font-size: 1rem; /* 16px */
@@ -84,7 +93,28 @@
         font-style: normal;
     }
 
-        /****************************************************************************************************/
+    .register-btn {
+        position: relative;
+        padding: .8rem 1rem;
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #e7e7e7d1;
+        background: #212121;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 10px 20px rgba(0, 0, 0, 0.4);
+        transition: all 0.2s ease;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #292929;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+
+    /****************************************************************************************************/
 
     /** Mobile Navbar **/
 
@@ -92,6 +122,13 @@
         background-color: #212121;
         box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.8);
         z-index: 999;
+    }
+
+    .nav {
+        background-image: url("/img/footer/world1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
     }
 
     nav {
@@ -106,6 +143,52 @@
     nav li {
         font-size: larger;
         color: #e7e7e7d1;
+    }
+
+    /****************************************************************************************************/
+
+    /** Contact Us **/
+
+    .contact {}
+
+    /****************************************************************************************************/
+
+    /** Footer **/
+
+    .footer {
+        background-color: #212121;
+        color: #e7e7e7d1;
+        font-family: "inter";
+        padding-block: 20px;
+    }
+    .lg-footer {
+        background-image: url("/img/footer/world1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+    }
+    .footer h5 span {
+        border-bottom: 3px solid #91BE55;
+        padding: 5px 0;
+      }
+    .sb_footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .sb_footer-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        text-align: left;
+    }
+    .sb_footer-links-div {
+        width: 250px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
     }
 
     /****************************************************************************************************/
