@@ -16,6 +16,9 @@ export default {
     },
 
     screens: {
+      'xs': '320px',
+      // => @media (min-width: 320px) { ... }
+
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
 
@@ -43,6 +46,11 @@ export default {
         custom6: 'linear-gradient rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5))',
         custom7: '0px 2px 5px -1px rgba(50, 50, 93, 0.25),  0px 1px 3px -1px rgba(0, 0, 0, 0.3)',
         custom8: '0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.06)',
+      },
+
+      backgroundImage: {
+        'ihero': "url('/img/hero/oupa1.jpg')",
+        'banner': "url('/img/hero/glass.jpg')",
       },
 
       colors: {

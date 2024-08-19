@@ -13,7 +13,7 @@ import { FaMapLocationDot } from "react-icons/fa6";
 
 export default function Footer() {
     return(
-        <footer className="footer lg-footer">
+        <footer className="footer lg-footer sm:rounded-tl-[110px]">
             <div className="container sm:lg-container mx-auto sb_footer">
                 <div className="sb_footer-links">
                     <div className="sb_footer-links-div">
@@ -30,7 +30,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className="sb_footer-links-div mb-4">
-                        <h5 className=''><span>Quick Links</span></h5>
+                        <h5 className='font-[inter] font-bold'><span>Quick Links</span></h5>
                         <ul className=''>
                             <Link to='/'><li className='hover:text-[#91be55] flex gap-2 items-center mt-3'><ion-icon name="caret-forward-outline"></ion-icon>Home</li></Link>
                             <Link to='/features'><li className='hover:text-[#91be55] flex gap-2 items-center'><ion-icon name="caret-forward-outline"></ion-icon>Features</li></Link>
@@ -41,7 +41,7 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div className="sb_footer-links-div mb-4">
-                    <h5 className=''><span>Let&apos;s Get In Touch</span></h5>
+                    <h5 className='font-[inter] font-bold'><span>Let&apos;s Get In Touch</span></h5>
                         <div>
                             <div className='flex items-center gap-4 mt-4 sm:text-lg'><span className='text-green sm:text-2xl'><FaEnvelope /></span><span>info@gipan.org</span></div>
                             <div className='flex items-center gap-4 mt-4 sm:text-lg'><span className='text-green sm:text-2xl'><FaPhone /></span><span>+264 000 0000</span></div>

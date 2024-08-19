@@ -13,7 +13,7 @@
     }
 
     body {
-        background-color: #aca297;
+        background-color: #fff;
         font-family: "Poppins", sans-serif;
         overflow-x: hidden; /* Hide horizontal scrollbar */
         @apply overflow-y-scroll
@@ -50,8 +50,15 @@
     font: inherit;
     }
 
+    .h1 {
+        font-size: 2.5rem; /* 48px */
+        line-height: 1;
+        font-weight: 600;
+        font-style: normal;
+    }
+
     h1 {
-        font-size: 3rem; /* 48px */
+        font-size: 2rem; /* 48px */
         line-height: 1;
         font-weight: 600;
         font-style: normal;
@@ -73,6 +80,13 @@
 
     h4 {
         font-size: 1.5rem; /* 24px */
+        line-height: 2rem; /* 32px */
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .h4 {
+        font-size: 1.1rem; /* 24px */
         line-height: 2rem; /* 32px */
         font-weight: 600;
         font-style: normal;
@@ -112,8 +126,40 @@
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
-}
+    }
 
+    .btn {
+        position: relative;
+        background-color: var(--btn-bg, #91BE55);
+        color: white;
+        font-weight: 600;
+        padding: 12px 24px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition-delay: 0.4s;
+    }
+
+    .btn ion-icon {
+        --ionicon-stroke-width: 70px;
+        font-size: 1.2rem;
+    }
+
+    .btn:not(.btn-outline)::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border: 1px solid var(--btn-bg, #91BE55);
+        transform: translate(5px, 5px);
+        transition-delay: 0.2s;
+    }
+
+    .btn:is(:hover, :focus)::after { transform: translate(0, 0); }
+
+    .btn-outline {
+        border: 2px solid #91BE55;
+        background-color: transparent;
+    }
     /****************************************************************************************************/
 
     /** Mobile Navbar **/
@@ -149,7 +195,253 @@
 
     /** Contact Us **/
 
-    .contact {}
+    .contact-intro i {
+        color: #91BE55;
+    }
+
+    .contact{
+        overflow: hidden;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        width: 100%;
+        min-height: 100vh;
+        background-color: #2e2e2e;
+        color: white;
+    }
+
+    .bg-contact {
+        background-image: url("/img/body/contact.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+    }
+
+    .f-container{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 8%;
+    }
+    .f-container .row{
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1100px;
+    }
+    .row section.col{
+        display: flex;
+        flex-direction: column;
+    }
+    .row section.left{
+        flex-basis: 5%;
+        
+        margin-right: 60px;
+    }
+    .row section.right{
+        flex-basis: 60%;
+    }
+    section.left .contactTitle h2{
+        position: relative;
+        font-size: 28px;
+        color: #ddd;
+        display: inline-block;
+        margin-bottom: 25px;
+    }
+    section.left .contactTitle h2::before{
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 1px;
+        background-color: #888;
+        top: 120%;
+        left: 0;
+    }
+    section.left .contactTitle h2::after{
+        content: '';
+        position: absolute;
+        width: 25%;
+        height: 3px;
+        background-color: #91BE55;
+        top: calc(120% - 1px);
+        left: 0;
+    }
+    section.left .contactTitle p{
+        font-size: 17px;
+        color: #ccc;
+        letter-spacing: 1px;
+        line-height: 1.2;
+        padding-bottom: 22px;
+    }
+    section.left .contactInfo{
+        margin-bottom: 16px;
+    }
+    .contactInfo .iconGroup{
+        display: flex;
+        align-items: center;
+        margin: 25px 0px;
+    }
+    .iconGroup .icon{
+        width: 45px;
+        height: 45px;
+        border: 2px solid #91BE55;
+        border-radius: 50%;
+        margin-right: 20px;
+        position: relative;
+    }
+    .iconGroup .icon i{
+        font-size: 24px;
+        color: #ddd;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .iconGroup .details span{
+        display: block;
+        color: #888;
+        font-size: 18px;
+    }
+    .iconGroup .details span:nth-child(1){
+        text-transform: uppercase;
+        color: #ccc;
+    }
+    section.left .socialMedia{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 22px 0px 0px;
+    }
+
+    .socialMedia a{
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        margin-right: 15px;
+    }
+
+    .socialMedia a {
+        color: #ddd;
+        font-size: 24px;
+        line-height: 35px;
+        border: 1px solid transparent;
+        transition-delay: 0.2s;
+    }
+
+    .socialMedia a:hover i{
+        color: #91BE55;
+    }
+
+    /* Code for the right section (column) */
+
+    .row section.right .messageForm{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+    .row section.right .inputGroup{
+        margin: 18px 0px;
+        position: relative;
+    }
+    .messageForm .halfWidth{
+        flex-basis: 48%;
+    }
+    .messageForm .fullWidth{
+        flex-basis: 100%;
+    }
+    .messageForm input, .messageForm textarea{
+        width: 100%;
+        font-size: 18px;
+        padding: 2px 0px;
+        background-color: transparent;
+        color: #ddd;
+        border: none;
+        border-bottom: 2px solid #666;
+        outline: none;
+    }
+    .messageForm textarea{
+        resize: none;
+        height: 220px;
+        display: block;
+    }
+    textarea::-webkit-scrollbar{
+        width: 5px;
+    }
+    textarea::-webkit-scrollbar-track{
+        background-color: #1e1e1e;
+        border-radius: 15px;
+    }
+    textarea::-webkit-scrollbar-thumb{
+        background-color: dodgerblue;
+        border-radius: 15px;
+    }
+    .inputGroup label{
+        position: absolute;
+        left: 0;
+        bottom: 4px;
+        color: #888;
+        font-size: 18px;
+        transition: 0.4s;
+        pointer-events: none;
+    }
+    .inputGroup:nth-child(4) label{
+        top: 2px;
+    }
+    .inputGroup input:focus ~ label, .inputGroup textarea:focus ~ label,
+    .inputGroup input:valid ~ label, .inputGroup textarea:valid ~ label
+    {
+        transform: translateY(-30px);
+        font-size: 16px;
+    }
+
+    @media(max-width: 1100px){
+        .messageForm .halfWidth{
+            flex-basis: 100%;
+        }
+    }
+    @media(max-width: 900px){
+        .container .row{
+            flex-wrap: wrap;
+        }
+        .row section.left, .row section.right{
+            flex-basis: 100%;
+            margin: 0px;
+        }
+    }
+
+    /** Code for location cards section **/
+
+    .iconCard{
+        align-items: center;
+    }
+    .iconCard .icon{
+        width: 45px;
+        height: 45px;
+        border: 2px solid #91BE55;
+        border-radius: 50%;
+        margin-right: 10px;
+        position: relative;
+    }
+    .iconCard .icon i{
+        font-size: 24px;
+        color: #ddd;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .iconCard .details span{
+        display: block;
+        color: #888;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .iconCard .details span:nth-child(1){
+        text-transform: uppercase;
+        color: #ccc;
+    }
 
     /****************************************************************************************************/
 
@@ -160,21 +452,25 @@
         color: #e7e7e7d1;
         font-family: "inter";
         padding-block: 20px;
-    }
+}
+
     .lg-footer {
         background-image: url("/img/footer/world1.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: left;
     }
+
     .footer h5 span {
         border-bottom: 3px solid #91BE55;
         padding: 5px 0;
-      }
+    }
+
     .sb_footer {
         display: flex;
         flex-direction: column;
     }
+
     .sb_footer-links {
         display: flex;
         justify-content: space-between;
@@ -184,6 +480,7 @@
         width: 100%;
         text-align: left;
     }
+
     .sb_footer-links-div {
         width: 250px;
         display: flex;
