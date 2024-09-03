@@ -1,5 +1,5 @@
 import Back2Top from "../components/Back2Top";
-import Banner from "../components/Banner";
+import Banner from "../components/hero/Banner";
 import ContactBody from "../components/body/ContactBody";
 import Footer from "../components/Footer";
 import Gmap from "../components/Leaflet/Gmap";

@@ -16,8 +16,8 @@ export default {
     },
 
     screens: {
-      'xs': '320px',
-      // => @media (min-width: 320px) { ... }
+      'xs': '316px',
+      // => @media (min-width: 300px) { ... }
 
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
@@ -33,6 +33,9 @@ export default {
 
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
+
+      '3xl': '1920px',
+      // => @media (min-width: 1920px) { ... }
     },
 
     extend: {
@@ -51,6 +54,7 @@ export default {
       backgroundImage: {
         'ihero': "url('/img/hero/oupa1.jpg')",
         'banner': "url('/img/hero/glass.jpg')",
+        'header': "url('/img/hero/header.jpg')",
       },
 
       colors: {

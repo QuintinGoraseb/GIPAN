@@ -51,7 +51,7 @@
     }
 
     .h1 {
-        font-size: 2.5rem; /* 48px */
+        font-size: 3rem; /* 48px */
         line-height: 1;
         font-weight: 600;
         font-style: normal;
@@ -193,6 +193,12 @@
 
     /****************************************************************************************************/
 
+    /** Index Page **/
+
+    
+
+    /****************************************************************************************************/
+
     /** Contact Us **/
 
     .contact-intro i {
@@ -235,7 +241,6 @@
     }
     .row section.left{
         flex-basis: 5%;
-        
         margin-right: 60px;
     }
     .row section.right{
@@ -441,6 +446,87 @@
     .iconCard .details span:nth-child(1){
         text-transform: uppercase;
         color: #ccc;
+    }
+
+    /****************************************************************************************************/
+
+    /** About Us **/
+
+    .title h1 {
+        color: #fff;
+        font-family: 'merriweather';
+        font-weight: 600;
+    }
+
+    .brick {
+        box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.8) !important;
+    }
+
+    .visionInfo{
+        margin-bottom: 16px;
+    }
+    .visionInfo .visionGroup{
+        display: flex;
+        align-items: center;
+        margin: 25px 0px;
+    }
+    .visionInfo2 .visionGroup2{
+        display: flex;
+        align-items: center;
+        margin: 25px 0px;
+    }
+
+    .visionGroup .icon{
+        width: 45px;
+        height: 45px;
+        border: 2px solid #91BE55;
+        background-color: #91BE55;
+        border-radius: 0;
+        margin-right: 20px;
+        position: relative;
+    }
+
+    .visionGroup2 .icon{
+        width: 77px;
+        height: 77px;
+        border: 2px solid #91BE55;
+        background-color: #91BE55;
+        border-radius: 0;
+        margin-right: 20px;
+        position: relative;
+    }
+
+    .visionGroup .icon i{
+        font-size: 24px;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .visionGroup2 .icon i{
+        font-size: 40px;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .visionGroup .details span{
+        display: block;
+        font-size: 18px;
+    }
+    .visionGroup .details span:nth-child(1){
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    .visionGroup2 .details span{
+        display: block;
+        font-size: 18px;
+    }
+    .visionGroup2 .details span:nth-child(1){
+        text-transform: uppercase;
+        font-weight: 600;
     }
 
     /****************************************************************************************************/

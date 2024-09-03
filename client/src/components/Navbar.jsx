@@ -15,7 +15,7 @@ export default function Navbar() {
     const handleClick = () => setNav(!nav)
 
     return(
-        <nav className="flex justify-between fixed w-full items-center nav container sm:lg-container">
+        <nav className="flex justify-between fixed max-w-full items-center nav container sm:lg-container">
                 <a href="/home" className='flex items-center gap-2 py-3'>
                     <img className='size-11 sm:size-12' src="/img/logo/logo.png" alt="LOGO" />
                     <h1 className='text-[#e7e7e7d1] text-3xl logo font-["merriweather"] '>GIPAN</h1>

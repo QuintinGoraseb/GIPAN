@@ -58,14 +58,14 @@ export default function Footer() {
                             <button type="submit" className="flex-none rounded-sm bg-[#91BE55] mt-4 sm:mt-0 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#91be55] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#91be55]" >Subscribe
                             </button>
                         </div>
-                        <p className='text-xs mt-4'>By submitting this form you agree to our <span className='text-green'><a href="/terms">Terms & Conditions</a></span> and our <span className='text-green'><a href="/privacy">Privacy Policy</a></span>.</p>
+                        <p className='text-xs mt-4'>By submitting this form you agree to our <span className='text-green hover:underline'><a href="/terms">Terms & Conditions</a></span> and our <span className='text-green hover:underline'><a href="/privacy">Privacy Policy</a></span>.</p>
                     </div>
                 </div>
                 <hr
                 className="my-5 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-100 to-transparent opacity-25 dark:opacity-100 z-10"/>
                 <div className="text-center xl:flex justify-between items-center">
                     <div className="text-sm text-center">
-                        Copyright <span className='footer_icon'>&copy;</span> GIPAN {new Date().getFullYear()}. All Rights Reserved <span className='footer_icon'>|</span> Developed by: <a className="footer_icon font-[playfair] hover:text-green text-sm" href="/">SOFTLogiQ</a>
+                        Copyright <span className='footer_icon'>&copy;</span> GIPAN {new Date().getFullYear()}. All Rights Reserved <span className='footer_icon'>|</span> Developed by: <a className="footer_icon font-[playfair] hover:text-green text-sm" href="/">PARALLAX</a>
                     </div>
                     <div className='hidden xl:flex gap-4'>
                         <a href="/terms"><div><p className='hover:text-green hover:underline text-sm'>Terms & Conditions</p></div></a>
