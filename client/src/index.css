@@ -132,7 +132,7 @@
         position: relative;
         background-color: var(--btn-bg, #91BE55);
         color: white;
-        font-weight: 600;
+        font-weight: 500;
         padding: 12px 24px;
         display: flex;
         align-items: center;
@@ -190,6 +190,75 @@
         font-size: larger;
         color: #e7e7e7d1;
     }
+
+     /****************************************************************************************************/
+
+    /** Mobile Hero **/
+
+    .hero {
+        background-color: eerie;
+        color: white;
+        min-height: 700px;
+        padding-block: 220px 60px;
+        display: grid;
+        align-items: center;
+    }
+
+    .hero .section-subtitle {
+        --color: white;
+        --ff: var(--ff-inter);
+        --fs: var(--fs-7);
+    }
+
+    .hero-title {
+        font-size: 40px;
+        margin-block: 30px;
+        line-height: 1.2;
+    }
+
+    .hero-text {
+        font-family: var(--ff-inter);
+        font-size: 18px;
+        letter-spacing: -1px;
+        max-width: 50ch;
+        margin-block-end: 30px;
+    }
+
+    /** Features **/
+
+    .features {
+        padding-block-start: 0;
+        background-color: var(--eerie-black-1);
+    }
+
+    .features-list {
+        display: grid;
+        gap: 30px;
+    }
+
+    .features-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .features-item .item-icon {
+        color: white;
+        font-size: 55px;
+        margin-block-start: 10px;
+    }
+
+    .features-item .item-icon ion-icon { --ionicon-stroke-width: 25px; }
+
+    .features-item .item-title { margin-block-end: 10px; }
+
+    .features-item .item-text {
+        max-width: 25ch;
+        color: white;
+        font-size: 15px;
+    }
+
+    /****************************************************************************************************/
 
     /****************************************************************************************************/
 
@@ -573,6 +642,126 @@
         justify-content: flex-start;
         flex-direction: column;
     }
+
+    /****************************************************************************************************/
+
+    /** Media Queries **/
+
+    /**
+    * responsive for larger than 992px screen
+    */
+
+    @media (min-width: 992px) {
+
+        /**
+        * CUSTOM PROPERTY
+        */
+
+        :root {
+
+        /**
+        * typography
+        */
+
+        --fs-2: 7.5rem;
+
+        }
+
+        /**
+        * HERO
+        */
+
+        .hero {
+        background-image: url("/img/hero/oupa1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+        min-height: 780px;
+        }
+
+        /**
+        * FEATURES
+        */
+
+        .features { padding-block-start: var(--section-padding); }
+
+        .features-list { grid-template-columns: repeat(4, 1fr); }
+
+
+    /**
+    * responsive for larger than 1200px screen
+    */
+
+
+    /**
+     * REUSED STYLE
+     */
+
+    .container {
+      max-width: 1400px;
+      width: 100%;
+      margin-inline: auto;
+      padding-inline: 30px;
+    }
+
+    .section-title { line-height: 1.2; }
+
+    /**
+     * HERO
+     */
+
+    .hero {
+      padding-block: 200px 325px;
+      background-position: center;
+    }
+
+    /**
+     * FEATURES
+     */
+
+    .features {
+      padding-block-start: 0;
+      margin-block-start: -285px;
+      background-color: transparent;
+    }
+  }
+
+  @media (min-width: 768px) {
+
+    /**
+     * FEATURES, SERVICE
+     */
+
+    .features-list { grid-template-columns: 1fr 1fr; }
+
+  }
+
+  @media (min-width: 640px) {
+
+    /**
+     * FEATURES, SERVICE
+     */
+
+    .features-list { grid-template-columns: 1fr 1fr; }
+
+  }
+
+  @media (min-width: 992px) {
+
+    .features { padding-block-start: var(--section-padding); }
+
+    .features-list { grid-template-columns: repeat(4, 1fr); }
+
+  }
+
+  @media (min-width: 1200px) {
+
+    .features {
+        padding-block-start: 0;
+        margin-block-start: -215px;
+        background-color: transparent;
+      }
+  }
 
     /****************************************************************************************************/
 

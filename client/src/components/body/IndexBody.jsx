@@ -10,7 +10,7 @@ export default function IndexBody() {
     const [counterState, setCounterState] = useState(false)
 
     return(
-        <section className="py-10 sm:py-20 bg-[#1A3842]">
+        <section className="py-10 sm:py-20">
             <div className="container lg:lg-container mx-auto">
                 <div className="xl:flex items-center justify-between intro bg-[#f8f8f8]">
                     <div className="xl:w-1/4 xs:max-xl:border-b-4 xs:border-green xl:border-r-4 xl:border-green p-6 xl:p-0 xl:m-6"><h1 className="sm:h1 font-[merriweather] text-[#434343]">Welcome <br /><span className="text-green">Message</span></h1></div>

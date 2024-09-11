@@ -44,9 +44,9 @@ export default function Navbar() {
                     <Link to='/products'><li className='hover:text-[#91be55]'>Products</li></Link>
                     <Link to='/location'><li className='hover:text-[#91be55]'>Locations</li></Link>
                     <Link to='/contact'><li className='hover:text-[#91be55]'>Contact Us</li></Link>
-                    <button className='register-btn mt-4 hover:text-green font-["merriweather"] text-sm bg-[#212121]'><a href="/register">Register Now  &#10230;</a></button>
+                    <button className='register-btn mt-4 hover:text-green font-["merriweather"] text-sm bg-[#212121]'><a href="/portal">Register Now  &#10230;</a></button>
                 </ul>
-                <button className='hidden lg:block register-btn hover:text-green font-["merriweather"] text-sm bg-transparent hover:bg-[#141414]'><a href="/register">Register Now  &#10230;</a></button>
+                <button className='hidden lg:block register-btn hover:text-green font-["merriweather"] text-sm bg-transparent hover:bg-[#141414]'><a href="/portal">Register Now  &#10230;</a></button>
         </nav>
     );
 }
